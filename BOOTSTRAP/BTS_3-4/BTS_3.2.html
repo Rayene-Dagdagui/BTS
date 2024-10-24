@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immagini con Bootstrap</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .img-circle {
+            border-radius: 50%; /* Immagine circolare */
+            width: 100px; /* Dimensione fissa */
+            height: 100px; /* Dimensione fissa */
+        }
+        .img-rounded {
+            border-radius: 10px; /* Bordo arrotondato */
+            width: 150px; /* Dimensione fissa */
+            height: auto; /* Mantieni proporzioni */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <!-- Jumbotron -->
+     <div class="jumbotron bg-info text-white p-4 rounded mb-4">
+        <h1 class="display-4">Immagini di calciatori in diversi stili</h1>
+        </div>
+
+<div class="container mt-5">
+    <div class="row">
+        <!-- Immagine fluttuante a destra in un cerchio -->
+        <div class="col-md-6">
+            <h3>Immagine Fluttuante a Destra</h3>
+            <img src="Pessi.jpg" class="img-circle float-end" alt="Immagine Circolare">
+            <p>Questa &egrave; una descrizione del contenuto a destra dell'immagine circolare.</p>
+        </div>
+
+        <!-- Immagine centrata in un thumb  nail -->
+        <div class="col-md-6">
+            <h3>Immagine Centrata in un Thumbnail</h3>
+            <div class="text-center">
+                <img src="ronaldo.jpg" class="img-thumbnail" alt="Thumbnail">
+            </div>
+            <p>Questa &egrave; una descrizione del contenuto sotto l'immagine thumbnail.</p>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <!-- Immagine fluttuante a sinistra con bordi arrotondati -->
+        <div class="col-md-6">
+            <h3>Immagine Fluttuante a Sinistra</h3>
+            <img src="bale.jpg" class="img-rounded float-start" alt="Immagine Arrotondata">
+            <p>Questa &egrave; una descrizione del contenuto a sinistra dell'immagine arrotondata.</p>
+        </div>
+    </div>
+</div>
+
+<div class="alert alert-success alert-dismissible fade show mt-4" role="alert">
+    Questo &egrave; un messaggio di successo! <a href="#top" class="alert-link">Torna all'inizio della pagina</a>.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<div class="container mt-5">
+    <h1>Bottoni Outline e Block Level</h1>
+    <div class="row">
+        <div class="col-md-6">
+            <!-- Bottone Outline Primario -->
+            <button type="button" class="btn btn-outline-primary btn-block mb-2">Bottone Primario</button>
+            <!-- Bottone Outline Secondario -->
+            <button type="button" class="btn btn-outline-secondary btn-block mb-2">Bottone Secondario</button>
+        </div>
+        <div class="col-md-6">
+            <!-- Bottone Outline Successo -->
+            <button type="button" class="btn btn-outline-success btn-block mb-2">Bottone di Successo</button>
+            <!-- Bottone Outline Danger -->
+            <button type="button" class="btn btn-outline-danger btn-block mb-2">Bottone di Pericolo</button>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <h1>Gruppo di Bottoni con DropDownMenu</h1>
+    
+    <div class="btn-group">
+        <!-- Bottone Primario -->
+        <button type="button" class="btn btn-outline-primary">Bottone Primario</button>
+        
+        <!-- Bottone di Dropdown -->
+        <button type="button" class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Menu
+        </button>
+        
+        <!-- Menu a Discesa -->
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Opzione 1</a></li>
+            <li><a class="dropdown-item" href="#">Opzione 2</a></li>
+            <li><a class="dropdown-item" href="#">Opzione 3</a></li>
+        </ul>
+    </div>
+</div>
+
+
+</body>
+</html>
